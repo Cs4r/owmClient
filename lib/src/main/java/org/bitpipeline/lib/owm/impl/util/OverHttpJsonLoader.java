@@ -45,8 +45,8 @@ import org.slf4j.LoggerFactory;
  */
 public class OverHttpJsonLoader {
 
-	private static final int CONTENT_SIZE = 8 * 1024;
 	private static final Logger LOGGER = LoggerFactory.getLogger(OverHttpJsonLoader.class);
+	private static final int CONTENT_SIZE = 8 * 1024;
 	private final HttpClient httpClient;
 
 	/**

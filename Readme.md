@@ -1,15 +1,15 @@
 # Introduction
-This is a Java library to retrieve weather information and forecasts from [Open Weather Map](http://http://openweathermap.org/).
 
-# Continuous Integration
-
-[![Build Status](https://travis-ci.org/migtavares/owmClient.png?branch=master)](https://travis-ci.org/migtavares/owmClient)
-
-Continuous integration is done on [Travis CI](https://travis-ci.org) and the status for the OwmClient can be found [here](https://travis-ci.org/migtavares/owmClient).
+This project is a fork of [owmClient](https://github.com/migtavares/owmClient): A Java library to retrieve weather information and forecasts from [Open Weather Map](http://http://openweathermap.org/).
 
 # Features
 
 ## Implemented
+
++ getting weather forecast for a city by
+	+ OpenWeatherMap city id
+
+## Planned
 
 + getting current weather at
 	+ around a geographic coordinate
@@ -30,13 +30,10 @@ Continuous integration is done on [Travis CI](https://travis-ci.org) and the sta
 	+ from a station id (partial)
 + using an OpenWeatherMap APPID
 
-## Planned
-
-The weather history for stations is still not complete.
 
 # Usage
 
-Just create a instance of OwmClient, call it's methods and use their return values.
+*TODO*
 
 ## Dependencies
 
@@ -58,6 +55,8 @@ With maven that can be accomplished with:
 		<version>20090211</version>
 	</dependency>
 
+*TO BE COMPLETED*
+
 ## Note of caution
 There's almost no validation build in this library and the fetching of data from the JSON OpenWeatherMap API tries to survive without making much of a fuss.
 
@@ -67,22 +66,7 @@ For enumerations there's a special value `UNKNOWN` that means that although a va
 
 ## Simple Example
 
-
-	OwmClient owm = new OwmClient ();
-	WeatherStatusResponse currentWeather = owm.currentWeatherAtCity ("Tokyo", "JP");
-	if (currentWeather.hasWeatherStatus ()) {
-		WeatherData weather = currentWeather.getWeatherStatus ().get (0);
-		if (weather.getPrecipitation () == Integer.MIN_VALUE) {
-			WeatherCondition weatherCondition = weather.getWeatherConditions ().get (0);
-			String description = weatherCondition.getDescription ();
-			if (description.contains ("rain") || description.contains ("shower"))
-				System.out.println ("No rain measures in Tokyo but reports of " + description);
-			else
-				System.out.println ("No rain measures in Tokyo: " + description);
-		} else
-			System.out.println ("It's raining in Tokyo: " + weather.getPrecipitation () + " mm/h");
-	}
-
+*TODO*
 
 # Class Diagrams
 ## Basic Weather Data Structure
@@ -119,7 +103,8 @@ For enumerations there's a special value `UNKNOWN` that means that although a va
 + `WeatherStatusResponse` - list of `StatusWeatherData`
 
 # License												
-Copyright 2013 J. Miguel P. Tavares
+Copyright 2015 J. Miguel P. Tavares
+Copyright 2015 Cesar Aguilera
 
 Licensed under the Apache License, Version 2.0 (the "License")
 you may not use this file except in compliance with the License.
