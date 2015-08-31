@@ -104,6 +104,7 @@ For enumerations there's a special value `UNKNOWN` that means that although a va
 
 # License												
 Copyright 2015 J. Miguel P. Tavares
+
 Copyright 2015 Cesar Aguilera
 
 Licensed under the Apache License, Version 2.0 (the "License")
