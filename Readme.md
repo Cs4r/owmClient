@@ -2,6 +2,10 @@
 
 This project is a fork of [owmClient](https://github.com/migtavares/owmClient): A Java library to retrieve weather information and forecasts from [Open Weather Map](http://http://openweathermap.org/).
 
+# Continuous Integration
+
+[![Build Status](https://api.travis-ci.org/Cs4r/owmClient.png?branch=new)](https://travis-ci.org/Cs4r/owmClient)
+
 # Features
 
 ## Implemented
