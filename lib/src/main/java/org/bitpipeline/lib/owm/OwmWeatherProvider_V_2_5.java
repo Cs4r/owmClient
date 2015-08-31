@@ -34,6 +34,8 @@ public interface OwmWeatherProvider_V_2_5 {
 	 *            id of the city
 	 * @return {@link StatusWeatherData} if the id is correct and there is
 	 *         weather data for such a city, {@link Optional#empty()} otherwise
+	 * @throws IllegalArgumentException
+	 *             if cityId is negative or zero
 	 */
 	Optional<StatusWeatherData> currentWeatherInCity(int cityId);
 }
