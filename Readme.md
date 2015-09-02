@@ -3,9 +3,12 @@ This is a Java library to retrieve weather information and forecasts from [Open 
 
 # Continuous Integration
 
-[![Build Status](https://travis-ci.org/migtavares/owmClient.png?branch=master)](https://travis-ci.org/migtavares/owmClient)
+[![Build Status](https://travis-ci.org/Cs4r/owmClient.png?branch=master)](https://travis-ci.org/Cs4r/owmClient)
 
 Continuous integration is done on [Travis CI](https://travis-ci.org) and the status for the OwmClient can be found [here](https://travis-ci.org/migtavares/owmClient).
+
+# Current state
+This project is abandoned because I already found an open source library which covers same functionalities
 
 # Features
 
